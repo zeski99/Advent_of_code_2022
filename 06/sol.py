@@ -1,0 +1,1 @@
+print((lambda a,e: (e(a,4), e(a,14)))(open("in.txt").read(), lambda a,n: [i+n for i in range(len(a)-n) if len(set(a[i:i+n])) == n][0]))
