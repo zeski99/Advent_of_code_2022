@@ -1,0 +1,1 @@
+print((lambda I: (sum(set(range(*i[0]))<=set(range(*i[1])) or set(range(*i[0]))>=set(range(*i[1])) for i in I),sum(len(set(range(*i[0]))&set(range(*i[1])))>0 for i in I)))(list(map(lambda x: list(map(lambda y: (lambda z: [int(z[0]), int(z[1])+1])(y.split("-")), x.split(","))), open("in.txt").readlines()))))

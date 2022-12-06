@@ -1,0 +1,1 @@
+print((lambda e,d,p,f: (sum(map(lambda x: e(*p(x.strip().split())), f)), sum(map(lambda x: d(*p(x.strip().split())), f))))(lambda a,b: b + 1 + 3*(1 if a == b else 2 if (b-a) in (1, -2) else 0),lambda a,b: (a + b - 1)%3 + 1 + 3*b,lambda x: (ord(x[0]) - 65, ord(x[1]) - 88),open("in.txt").readlines()))

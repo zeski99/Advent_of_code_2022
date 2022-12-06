@@ -1,0 +1,1 @@
+print((lambda i,e: (sum(e(ord((set(a[:len(a)//2])&set(a[len(a)//2:])).pop())) for a in i), sum(e(ord((set(i[j])&set(i[j+1])&set(i[j+2])).pop())) for j in range(0,len(i),3))))(open("in.txt").read().split("\n"), lambda n: n%32 + 26*(n<91)))
